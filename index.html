@@ -17,8 +17,6 @@
         .display_none {
             display: none;
         }
-
-        }
     </style>
 
 </head>
@@ -65,15 +63,12 @@
 
             let scrollPos = $(document).scrollTop();
 
-            if (scrollPos > 200) {
-
-
+            if (scrollPos > 200)
                 $(".fadeIn2").fadeIn("4000");
-            }
-            if (scrollPos > 500) {
+            else if (scrollPos > 500) {
                 $(".fadeIn").fadeIn("4000");
                 $(".fadeIn3").delay(200).fadeIn("4000");
-            }
+            }//TODO: to add more sections here 
 
         });
 
